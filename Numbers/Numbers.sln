@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pi_to_N", "Pi_to_N\Pi_to_N.csproj", "{1853A27D-9A90-4058-BC0C-2535C3AE7389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci_to_N", "Fibonacci_to_N\Fibonacci_to_N.csproj", "{249BE1ED-F1F4-4B82-91B6-879C9F52CEBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1853A27D-9A90-4058-BC0C-2535C3AE7389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1853A27D-9A90-4058-BC0C-2535C3AE7389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1853A27D-9A90-4058-BC0C-2535C3AE7389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1853A27D-9A90-4058-BC0C-2535C3AE7389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249BE1ED-F1F4-4B82-91B6-879C9F52CEBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249BE1ED-F1F4-4B82-91B6-879C9F52CEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249BE1ED-F1F4-4B82-91B6-879C9F52CEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249BE1ED-F1F4-4B82-91B6-879C9F52CEBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
