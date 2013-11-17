@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pi_to_N", "Pi_to_N\Pi_to_N.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci_to_N", "Fibonacci_to_N\Fibonacci_to_N.csproj", "{249BE1ED-F1F4-4B82-91B6-879C9F52CEBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactorization", "PrimeFactorization\PrimeFactorization.csproj", "{D6F45429-7F09-4503-A95A-84E8F41FC1DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{249BE1ED-F1F4-4B82-91B6-879C9F52CEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{249BE1ED-F1F4-4B82-91B6-879C9F52CEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{249BE1ED-F1F4-4B82-91B6-879C9F52CEBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6F45429-7F09-4503-A95A-84E8F41FC1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6F45429-7F09-4503-A95A-84E8F41FC1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6F45429-7F09-4503-A95A-84E8F41FC1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6F45429-7F09-4503-A95A-84E8F41FC1DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
