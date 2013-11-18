@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,14 +30,29 @@ namespace PrimeFactorization
             }
             else
             {
-                to_factor = UInt64.Parse(args[0]);
+                try
+                {
+                    to_factor = UInt64.Parse(args[0]);
+                    Console.WriteLine("Now factoring {0}", to_factor);
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Usage:\n{0} <number>\n", Path.GetFileName(System.Reflection.Assembly.GetEntryAssembly().Location));
+                    Console.WriteLine("number = a positive integer from 1 to 18,446,744,073,709,551,615");
+                    to_factor = 0;
+                }
+                
             }
 
             //We now need to find the prime factors of to_factor, and print them out.
             //Recursive function is probably called for here.
             UInt64 z = is_prime(to_factor);
 
-            if (z == 1)
+            if (to_factor == 0)
+            {
+                
+            } 
+            else if (z == 1)
             {
                 Console.Write("{0} is a prime number.", to_factor);
             }
