@@ -10,7 +10,10 @@ namespace TileCost
     {
         static void Main(string[] args)
         {
-            uint height, width, tile_height, tile_width;
+            uint height;
+            uint width;
+            uint tile_height;
+            uint tile_width;
             float per_tile;
 
             width = get_input_uint("Enter the Width of the floor: ");
@@ -22,6 +25,22 @@ namespace TileCost
             Console.WriteLine("The cost to tile this will be approximately: {0:C}",per_tile*((width*height)/(tile_width*tile_height)));
 
             uint rows, cols;
+            uint altrows, altcols;
+
+            //Simpler solution - compute both ways and take the lesser of the evils on fit
+            rows = (width % tile_width == 0) ? (width / tile_width) : (width / tile_width) + 1;
+            cols = (height % tile_height == 0) ? (height / tile_height) : (height / tile_height) + 1;
+
+            altrows = (height % tile_width == 0) ? (height / tile_width) : (height / tile_width) + 1;
+            altcols = (width % tile_height == 0) ? (width / tile_height) : (width / tile_height) + 1;
+            
+            if (altrows * altcols < rows * cols)
+            {
+                rows = altrows;
+                cols = altcols;
+            }
+
+            /*
 
             //TODO: Potentially, picking the evenly divisible dimension COULD result in a large waste product and therefore not be 'best fit'
             //TODO: To do it right, should think about the logic a bit more (e.g. how would a human solve it given extremes)
@@ -84,13 +103,13 @@ namespace TileCost
                     altrows = (width / tile_height) + 1;
                     altcols = (height / tile_width) + 1;
 
-                    if (altrows*altrows < rows*cols)    
+                    if (altrows*altcols < rows*cols)    
                     {
                         rows = altrows;
                         cols = altcols;
                     }
                 }
-            }
+            }*/
             Console.WriteLine("To make sure you have enough tiles ({0}) you need to spend {1:C}", rows * cols, per_tile * (rows * cols));
             Console.ReadLine();
         }
