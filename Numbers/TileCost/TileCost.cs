@@ -78,7 +78,7 @@ namespace TileCost
                 {
                     //We will need both an extra row and column of tiles to compensate
                     //Finally, optimize purchase even more here to determine which size BEST fits the row/column
-                    int altrows, altcols;
+                    uint altrows, altcols;
                     rows = (height / tile_height) + 1;
                     cols = (width / tile_width) + 1;
                     altrows = (width / tile_height) + 1;
