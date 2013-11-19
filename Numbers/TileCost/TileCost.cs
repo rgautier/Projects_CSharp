@@ -23,7 +23,8 @@ namespace TileCost
 
             uint rows, cols;
 
-            //TODO: Compute whether there are going to be underruns on any of the dimensions and add to the width and/or height to compensate and recalculate
+            //TODO: Potentially, picking the evenly divisible dimension COULD result in a large waste product and therefore not be 'best fit'
+            //TODO: To do it right, should think about the logic a bit more (e.g. how would a human solve it given extremes)
             //First, check the width and make sure it's divisible by tile width or height evenly
             if (width % tile_height == 0)
             {
@@ -76,12 +77,19 @@ namespace TileCost
                 else
                 {
                     //We will need both an extra row and column of tiles to compensate
+                    //Finally, optimize purchase even more here to determine which size BEST fits the row/column
+                    int altrows, altcols;
                     rows = (height / tile_height) + 1;
                     cols = (width / tile_width) + 1;
+                    altrows = (width / tile_height) + 1;
+                    altcols = (height / tile_width) + 1;
+
+                    if (altrows*altrows < rows*cols)    
+                    {
+                        rows = altrows;
+                        cols = altcols;
+                    }
                 }
-                
-                
-                
             }
             Console.WriteLine("To make sure you have enough tiles ({0}) you need to spend {1:C}", rows * cols, per_tile * (rows * cols));
             Console.ReadLine();
