@@ -16,6 +16,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeReturn", "ChangeReturn\ChangeReturn.csproj", "{4CBEEBC6-4E89-499E-8B4D-902497EB79EA}"
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortgageCalc", "MortgageCalc\MortgageCalc.csproj", "{6EE63C9B-53BC-4102-9889-E86B95232F6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bin2dec2bin", "bin2dec2bin\bin2dec2bin.csproj", "{B9B1C2D9-13D8-4759-B611-D06E5866C0BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedClasses", "SharedClasses\SharedClasses.csproj", "{B983CEE2-0DEF-45C7-9043-294F9093555E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +54,14 @@ Global
 		{6EE63C9B-53BC-4102-9889-E86B95232F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EE63C9B-53BC-4102-9889-E86B95232F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EE63C9B-53BC-4102-9889-E86B95232F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B1C2D9-13D8-4759-B611-D06E5866C0BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B1C2D9-13D8-4759-B611-D06E5866C0BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B1C2D9-13D8-4759-B611-D06E5866C0BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B1C2D9-13D8-4759-B611-D06E5866C0BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B983CEE2-0DEF-45C7-9043-294F9093555E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B983CEE2-0DEF-45C7-9043-294F9093555E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B983CEE2-0DEF-45C7-9043-294F9093555E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B983CEE2-0DEF-45C7-9043-294F9093555E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

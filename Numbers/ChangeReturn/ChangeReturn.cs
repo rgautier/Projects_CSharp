@@ -36,7 +36,7 @@ namespace ChangeReturn
              myChange[0] = new Coin(1.00F, "dollar", "dollars");
 
              string yourChange = ""; 
-            foreach (Coin type in myChange)
+            foreach (Coin type in myChange)         //foreach index seems to follow the 0-length but this is not necessarily true
              {
                  uint count = 0;
                  while (remain > type.value)
